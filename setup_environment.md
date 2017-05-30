@@ -10,13 +10,13 @@ You should always use virtualenv when using Python. It allows you created a sanb
 
 Install virtualenv via pip:
 
-```
+```bash
     $ pip install virtualenv
 ```
 
 Test your installation
 
-```
+```bash
     $ virtualenv --version
 ```
 
@@ -26,7 +26,7 @@ You should see a version number. I'm working with `15.0.3`
 
 Once you have virtualenv installed, you first create a new directory and then instantiate a virtual environment in that directory. 
 
-```
+```bash
     $ mkdir example_app_folder
     $ cd example_app_folder
     $ virtualenv example_app

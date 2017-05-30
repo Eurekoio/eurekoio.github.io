@@ -288,7 +288,7 @@ dataset_x = x_df_wide.values.astype('float32')
 dataset_y = y_df_wide.values.astype('float32')
 ```
 
-The next bit of code splits our dataset so that 67% will be used to train our network while the remainder will be used to test its predictions. Confusingly, you also need to predict against your training data to see how well the model fits your training data. I'll cover more on this later. 
+The next bit of code splits our dataset so that 67% will be used to train our network while the remainder will be used to test its predictions. Confusingly, you also need to predict against your training data to see how well the model fits your training data. I'll come to this.
 
 ```python
 train_size = int(len(dataset_x) * 0.67)

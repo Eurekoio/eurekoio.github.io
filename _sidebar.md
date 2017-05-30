@@ -1,4 +1,3 @@
-- [Home](/)
 - Preface
     - [Intro](intro.md)
     - [Set Up Environment](setup_environment.md)
@@ -8,5 +7,6 @@
 - Algorithms
     - LSTM Madness
         - [000 / Init](lstm_madness_000.md)
+        - [000.1 / Overfitting](overfitting.md)
         - [001 / First Iteration](lstm_madness_001.md)
 - Backtesting

@@ -6,4 +6,6 @@
     - [Intro](data_management_intro.md)
     - [Yahoo](data_management_yahoo.md)
 - Algorithms
+    - [Data Inspection](data_inspection.md)
+    - [Linear Regression Model](linear_models_000.md)
 - Backtesting

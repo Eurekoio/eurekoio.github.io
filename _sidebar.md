@@ -1,6 +1,5 @@
 - [Home](/)
 - Preface
-    - [Intro](intro.md)
     - [Set Up Environment](setup_environment.md)
 - Data Management
     - [Intro](data_management_intro.md)
@@ -8,4 +7,5 @@
 - Algorithms
     - [Data Inspection](data_inspection.md)
     - [Linear Regression Model](linear_models_000.md)
-- Backtesting
+- Appendix
+    - [Glossary](glossary.md)

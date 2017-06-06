@@ -1,4 +1,4 @@
-# Linear Models
+# Linear Regression Models
 
 A linear regression is seldom used as a first example for algorithmic trading. Usually, variations of trading signals derived from moving averages are the de facto starting point for learning about algorithms. Moving averages are easy to calculate and relatively easy to get your head around. However, linear regression models aren't that much harder to understand and it easily lends itself to more complicated trading strategies.
 

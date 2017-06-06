@@ -52,7 +52,8 @@ The first thing you may notice is that most of code is SQL. In fact, most of the
 # Code walkthrough
 
 
-## First Pass // Calculate Returns
+## First Pass 
+> Calculate Returns
 
 ```sql
 SELECT 
@@ -79,7 +80,8 @@ This the first pass we join the current day returns with next day returns. This 
 
 This should be straightforward but keep in ming that your next day returns, the value your trying to predict, will be off by one day.
 
-## Second Pass // Apply algorithm
+## Second Pass 
+> Apply algorithm
 
 ```sql
 SELECT * 
@@ -112,7 +114,8 @@ The window function allows us to apply the regression on a rolling basis. The tr
  1999-01-04 | xlf    |     0.00000000000000000000 |     0.00933337679644815330 |    -0.629137865809961 |  -0.00427771173025455
 ```
 
-### Window Function Intermission
+### The Window Function
+> A worthwhile tangent
 
 It's important that you get your head around how window functions calculate rolling aggregates so let's take a look at a trivial example.
 
@@ -173,7 +176,8 @@ Here the rolling sum at row number 4 is 14 which is the sum the values at row nu
 !> Use `1 PRECEDING` rather than `CURRENT ROW` to avoid data snooping. If you see results that look too good to be true this is the first place to look when debugging. 
 
 
-## Third Pass // Make predictions
+## Third Pass
+> Make Predictions
 
 ```sql
 SELECT
@@ -189,7 +193,7 @@ FROM
 
 Here we calculate our predictions with the regression slope and intercept calculated in the second pass and name it `pvalue`. Now that we have our predictions for the next day returns and the actual next day returns, let's take a look at a scatter plot of the values.
 
-#### Predictions vs Next Day Returns plot
+#### Predictions vs Next Day Returns Plot
 
 ![pvalue vs next day returns](https://raw.githubusercontent.com/Eurekoio/research/master/regression/001/pvalue_v_next_day_ret.png)
 
@@ -281,6 +285,7 @@ g + t
 
 ![xlf backtesting results](https://raw.githubusercontent.com/Eurekoio/research/master/regression/002/xlf_simple_trade_cum_pnl.png)
 
+Mean reversion trade on the 5 day regression model? Yes, please
 
 ## Performance Metrics
 
